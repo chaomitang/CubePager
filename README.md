@@ -4,7 +4,7 @@ A cube effect sliding UI widget which can be set infinite-scroll mode, with elas
 
 ---
 
-![image](https://github.com/chaomitang/CubePager/cubepager.gif)
+![image](https://github.com/chaomitang/CubePager/blob/master/cubepager.gif)
 
 ### 1. Use like this below
 ```kotlin
@@ -36,5 +36,5 @@ if you set like this :
 ```kotlin
 cubeViewPager.setAllowedSwipeDirection(SwipeDirection.right)
 ```
-![image](https://github.com/chaomitang/CubePager/cubepager_forbidden_toleft.gif)
+![image](https://github.com/chaomitang/CubePager/blob/master/cubepager_forbidden_toleft.gif)
 
