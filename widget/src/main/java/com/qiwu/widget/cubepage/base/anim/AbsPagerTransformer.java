@@ -6,10 +6,7 @@ import androidx.annotation.NonNull;
 
 import com.qiwu.widget.base.viewpager.ViewPager;
 
-/**
- * Author: qi.wu
- * Date: 2019-11-17
- */
+
 public abstract class AbsPagerTransformer implements ViewPager.PageTransformer {
 
     @Override
