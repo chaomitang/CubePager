@@ -2,9 +2,8 @@ package com.qiwu.cubepager
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Scroller
-import com.qiwu.widget.base.viewpager.SwipeDirection
-import kotlinx.android.synthetic.main.activity_main.*
+import com.qiwu.widget.cubepage.view.CubeViewPager
+import com.qiwu.widget.cubepage.viewholder.CubeViewHolder
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,8 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        vp.init(DemoViewHolder(this))
-        vp.setScroller(Scroller(this))
-        vp.setAllowedSwipeDirection(SwipeDirection.all)
+        val cubeViewPager: CubeViewPager<DemoCubeView> = findViewById(R.id.vp)
+        cubeViewPager.init(object : CubeViewHolder<DemoCubeView>() {
+            override fun instantiate(): DemoCubeView {
+                return DemoCubeView(this@MainActivity)
+            }
+        })
     }
 }
